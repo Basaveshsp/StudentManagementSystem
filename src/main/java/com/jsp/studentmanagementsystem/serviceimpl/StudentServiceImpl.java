@@ -78,7 +78,7 @@ public class StudentServiceImpl implements StudentService {
 		studentResponse.setStudentName(student.getStudentName());
 		ResponseStructure<StudentResponse> structure = new ResponseStructure<StudentResponse>();
 		structure.setData(studentResponse);
-		structure.setMessage(student2.getStudentName() + " Student Data saved Sucessfully");
+		structure.setMessage(student2.getStudentName() + " Student Data saved  to DB Sucessfully");
 		structure.setStatusCode(HttpStatus.CREATED.value());
 		return new ResponseEntity<ResponseStructure<StudentResponse>>(structure, HttpStatus.CREATED);
 	}
